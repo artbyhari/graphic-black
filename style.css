@@ -168,40 +168,259 @@ body {
   display: block;
   margin: 20px auto;
 }
-/* ... other styles ... */
-
-.banner .content .author h2,
-.banner .content .author p,
-.banner .content .author p2 {
-    color: white; /* Set text color to white */
-    -webkit-text-stroke: 1px black; /* Add a black stroke */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.image-container img {
-    /* ... other styles ... */
-    border: 5px solid white; /* Set border to white */
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    background-color: #222;
+    color: #002366; /* Royal blue text color */
+    overflow: hidden;
 }
 
-/* ... other styles ... */
-/* ... other styles ... */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #002366; /* Royal blue heading color */
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #002366; /* Royal blue heading color */
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services li {
+    width: 200px; /* Set a fixed width for all cards */
+    margin: 20px;
+    padding: 30px;
+    background-color: #002366; /* Royal blue background for all cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.services li:nth-child(1) h3 {
+    font-size: 1.2rem;
+}
+.services li:nth-child(1) p {
+    font-size: 1rem;
+}
+
+.services li:nth-child(2) h3 {
+    font-size: 1.2rem;
+}
+.services li:nth-child(2) p {
+    font-size: 1rem;
+}
+
+.services li:nth-child(3) h3 {
+    font-size: 1.2rem;
+}
+.services li:nth-child(3) p {
+    font-size: 1rem;
+}
+
+.services li:nth-child(4) h3 {
+    font-size: 1.2rem;
+}
+.services li:nth-child(4) p {
+    font-size: 1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #002366; /* Royal blue heading color */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: #002366; /* Royal blue text color */
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #002366; /* Royal blue link color */
+    text-decoration: none;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid #ddd; /* Add a solid border to the container */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 20px; /* Add some padding inside the container */
+}
+
+.project {
+  margin: 10px; /* Adjust margin between projects */
+  width: 250px; /* Set a fixed width for each project */
+  text-align: center;
+  border: 1px solid #ddd; /* Add a solid border to each project */
+  border-radius: 5px; /* Add rounded corners to projects */
+  padding: 15px; /* Add some padding inside each project */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Increase project size slightly on hover */
+}
+
+.project img {
+  width: 100%; /* Ensure images fill the project width */
+  display: block; /* Make sure images behave like block elements */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+.project h3 {
+  font-size: 1.2rem; /* Adjust heading size */
+  margin-bottom: 5px; /* Add some space below the heading */
+}
+
+.project p {
+  font-size: 0.9rem; /* Adjust paragraph size */
+  line-height: 1.5; /* Improve readability */
+}
+/* ... existing CSS ... */
+
+body {
+  background-color: #000; /* Dark background for the entire page */
+  color: #fff; /* White text color for all elements by default */
+}
+
+.banner .content h1 {
+
+  text-shadow: none; /* Remove text shadow */
+}
 
 .banner .content .author {
-    /* Add some padding or margin for spacing */
-    padding: 10px; /* Example */
-    /* Or */
-    margin-top: 20px; /* Example */
+  color: #fff; /* White text color for the author */
+  text-shadow: none; /* Remove text shadow */
 }
 
-.banner .content .author h2,
-.banner .content .author p,
-.banner .content .author p2 {
-    color: white;
-    -webkit-text-stroke: 1px black;
-    /* Increased font size and added font-weight */
-    font-size: 1.2em; /* Adjust as needed */
-    font-weight: bold; /* Makes the text bolder */
-    /* Add a text shadow for extra emphasis */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adjust shadow as needed */
+.banner .content h2 {
+  color: #fff; /* White text color for subheadings */
+}
+
+.services li {
+  color: #fff; /* White text color for service cards */
 }
 
 /* ... other styles ... */
+.about p {
+  color: #fff; /* Set text color to white */
+}
+.about h2 {
+  color: #002366; /* Royal blue color */
+  text-shadow: 0 0 5px #fff; /* White stroke */
+}
